@@ -23,7 +23,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:  hsl(217, 54%, 11%);
+        background-color: hsl(217, 54%, 11%);
         margin: 0;
         padding: 0;
       }
@@ -40,7 +40,7 @@
       }
 
       .card {
-        margin-top: 40px;
+        margin: 40px 0px;
         border: 0px;
         border-radius: 10px;
         background-color: hsl(216, 50%, 16%);
@@ -58,7 +58,7 @@
       }
 
       .description {
-        color: hsl(0, 0%, 100%);
+        color: #6C829E;
         font-weight: 300;
         font-size: 18px;
         line-height: 1.5;
@@ -67,19 +67,33 @@
       }
 
       .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-weight: 400;
         color: hsl(178, 100%, 50%);
         line-height: 1.5;
       }
 
       .time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-weight: 300;
         color: hsl(215, 51%, 70%);
+      }
+
+      .creation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: hsl(0, 0%, 100%);
       }
 
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: white;
       }
 
       .attribution a {
@@ -102,24 +116,39 @@
         </main>
 
         <div class="row">
-          <div class="price">
-            <div class="column">
-              <img src="./images/icon-ethereum.svg" alt="Ethereum logo" />
+          <div class="column">
+            <div class="price">
+              <img src="./images/icon-ethereum.svg" alt="Ethereum logo" style="margin-right: 5px;" />
               0.041ETH
             </div>
           </div>
 
-          <div class="time">
-            <div class="column">
-              <img src="./images/icon-clock.svg" alt="clock icon" />
-              3 days
+          <div class="column">
+            <div class="time">
+              <img src="./images/icon-clock.svg" alt="clock icon" style="margin-right: 5px;" />
+              3 days left
             </div>
           </div>
         </div>
 
-        <hr style="color: hsl(215, 32%, 27%); border: 0.1px solid;">
-        
-        <div class="creation">Creation of Jules Wyvern</div>
+        <hr style="color: hsl(215, 32%, 27%); border: 0.1px solid" />
+
+        <div class="creation">
+          <img
+            src="./images/image-avatar.png"
+            alt="avatar"
+            style="
+              width: 1.5rem;
+              border: 1px solid white;
+              border-radius: 50px;
+              margin-right: 10px;
+            "
+          />
+          <span style="color: #6C829E; margin-right: 5px;">
+            Creation of 
+          </span>
+          Jules Wyvern
+        </div>
       </div>
 
       <div class="attribution">
