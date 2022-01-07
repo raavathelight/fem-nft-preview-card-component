@@ -18,6 +18,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
+      html,
       body {
         font-family: "Outfit", sans-serif;
         display: flex;
@@ -26,6 +27,7 @@
         background-color: hsl(217, 54%, 11%);
         margin: 0;
         padding: 0;
+        height: 100%;
       }
 
       .column {
@@ -57,6 +59,12 @@
         font-size: 22px;
       }
 
+      .image-preview {
+        color: hsl(178, 100%, 50%);
+        background: url('./images/icon-view.svg');
+        z-index: 100;
+      }
+      
       .description {
         color: #6C829E;
         font-weight: 300;
@@ -104,11 +112,13 @@
   <body>
     <div class="column">
       <div class="card">
-        <img
+        <div class="image-preview">
+          <img
           src="./images/image-equilibrium.jpg"
           alt="Equilibrium image"
           style="width: 18rem; height: 18rem; border-radius: 10px"
-        />
+          />
+        </div>
         <header class="title">Equilibrium #3429</header>
 
         <main class="description">
