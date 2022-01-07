@@ -59,6 +59,11 @@
         font-size: 22px;
       }
 
+      .title:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+      }
+
       .image-preview {
         color: hsl(178, 100%, 50%);
         background: url('./images/icon-view.svg');
@@ -96,6 +101,11 @@
         flex-direction: row;
         align-items: center;
         color: hsl(0, 0%, 100%);
+      }
+
+      .creation-name:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
       }
 
       .attribution {
@@ -157,7 +167,9 @@
           <span style="color: #6C829E; margin-right: 5px;">
             Creation of 
           </span>
-          Jules Wyvern
+          <span class="creation-name">
+            Jules Wyvern
+          </span>
         </div>
       </div>
 
