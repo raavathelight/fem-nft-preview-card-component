@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Outfit", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(217, 54%, 11%);
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 0px;
+      }
+
+      .card {
+        margin: 40px 0px;
+        border: 0px;
+        border-radius: 10px;
+        background-color: hsl(216, 50%, 16%);
+        width: 18rem;
+        height: inherit;
+        padding: 20px;
+      }
+
+      .title {
+        color: white;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 22px;
+      }
+
+      .title:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+      }
+
+      .image-preview {
+        color: hsl(178, 100%, 50%);
+        background: url('./images/icon-view.svg');
+        z-index: 100;
+      }
+      
+      .description {
+        color: #6C829E;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+        margin: 10px 0px;
+      }
+
+      .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 400;
+        color: hsl(178, 100%, 50%);
+        line-height: 1.5;
+      }
+
+      .time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 300;
+        color: hsl(215, 51%, 70%);
+      }
+
+      .creation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .creation-name:hover {
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="column" role="main">
+      <div class="card">
+        <div class="image-preview">
+          <img
+          src="./images/image-equilibrium.jpg"
+          alt="Equilibrium image"
+          style="width: 16rem; height: 16rem; border-radius: 10px"
+          />
+        </div>
+        <header class="title">Equilibrium #3429</header>
+
+        <main class="description">
+          Our Equilibrium collection promotes balance and calm.
+        </main>
+
+        <div class="row">
+          <div class="column">
+            <div class="price">
+              <img src="./images/icon-ethereum.svg" alt="Ethereum logo" style="margin-right: 5px;" />
+              0.041ETH
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="time">
+              <img src="./images/icon-clock.svg" alt="clock icon" style="margin-right: 5px;" />
+              3 days left
+            </div>
+          </div>
+        </div>
+
+        <hr style="color: hsl(215, 32%, 27%); border: 0.1px solid" />
+
+        <div class="creation">
+          <img
+            src="./images/image-avatar.png"
+            alt="avatar"
+            style="
+              width: 1.5rem;
+              border: 1px solid white;
+              border-radius: 50px;
+              margin-right: 10px;
+            "
+          />
+          <span style="color: #6C829E; margin-right: 5px;">
+            Creation of 
+          </span>
+          <span class="creation-name">
+            Jules Wyvern
+          </span>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">r</a>.
+      </div>
+    </div>
+  </body>
+</html>
